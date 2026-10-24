@@ -1,5 +1,4 @@
 /* 手柄赛车 Gamepad Racer —— 纯 Canvas 2D 小游戏
- * SPDX-License-Identifier: WTFPL
  * 手柄：左摇杆转向 / RT 油门 / LT 刹车倒车 / A 手刹 / B 重置 / Start 暂停
  * 键盘：方向键或 WASD / 空格手刹 / R 重置 / Esc 暂停 / M 静音
  */

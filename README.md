@@ -66,9 +66,6 @@ node tools/headless-test.js
 
 ## 许可证
 
-本项目以 **WTFPL（Do What The Fuck You Want To Public License, Version 2）** 发布，
-完整条文见 [LICENSE](./LICENSE)。
-
-简单说：你想怎么用就怎么用 —— 复制、修改、商用、闭源、再授权都行，不需要署名，
-也不提供任何担保。玩得开心。
+本项目以 **GNU General Public License v3.0（GPL-3.0）** 发布，完整条文见 [LICENSE](./LICENSE)。
+你可以自由使用、修改和分发，但衍生作品也必须以 GPL-3.0 开源。
 
