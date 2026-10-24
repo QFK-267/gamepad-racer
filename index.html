@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>手柄赛车 · Gamepad Racer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud">
+  <div class="panel lap">
+    <div class="row"><span class="k">圈数</span><span class="v" id="lap">0</span></div>
+    <div class="row"><span class="k">本圈</span><span class="v" id="cur">0.00</span></div>
+    <div class="row"><span class="k">最快</span><span class="v" id="best">--</span></div>
+    <div class="row"><span class="k">上圈</span><span class="v" id="last">--</span></div>
+  </div>
+
+  <div class="panel speedo">
+    <div id="spd">0</div>
+    <div class="unit">km/h</div>
+    <div class="bar"><i id="spdbar"></i></div>
+  </div>
+
+  <div class="panel padinfo">
+    <div id="padname" class="off">未检测到手柄</div>
+    <div class="hint">手柄：左摇杆转向 · RT 油门 · LT 刹车/倒车 · A 手刹 · B 重置 · Start 暂停</div>
+    <div class="hint">键盘：↑↓←→ / WASD · 空格 手刹 · R 重置 · Esc 暂停 · M 静音</div>
+  </div>
+
+  <div id="toast"></div>
+</div>
+
+<div id="overlay" class="show">
+  <div class="card">
+    <h1>手柄赛车</h1>
+    <p class="sub">Gamepad Racer · 单文件小游戏</p>
+    <div id="ovbody">
+      <p class="big">按手柄任意键 / 回车 开始</p>
+      <p class="tip">请先把手柄插上并按下任意键，浏览器才会识别它。<br>没有手柄也可以用键盘玩。</p>
+    </div>
+    <div class="keys">
+      <div><b>左摇杆</b> 转向</div>
+      <div><b>RT / ↑</b> 油门</div>
+      <div><b>LT / ↓</b> 刹车 · 倒车</div>
+      <div><b>A / 空格</b> 手刹漂移</div>
+      <div><b>B / R</b> 回到起点</div>
+      <div><b>Start / Esc</b> 暂停</div>
+    </div>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
